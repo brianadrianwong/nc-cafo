@@ -33,6 +33,6 @@ Thresholded the imagery for final step in creating a valid-mask across the state
 
 
 ### Change Detection:
-Temporal Analysis for the normalized difference of Tasseled-Cap Brightness & Tasseled-Cap Greenness. Have not seen this index before so currently referring to it as the Normalized TCB-TCG (NDTCBG) Index. Alternatively, also calling it the Rural Built-up Index (RBI). The primary observation of interest for using this normalized difference was because of confounding spectral signatures between rooftops and barren or non-vegetated fields, however, larger Tasseled Cap Greenness (TCG) responses of barren or non-vegetated fields relative to CAFO structures provided reason to exploit this relationship with a normalized difference approach.
+Temporal Analysis for the normalized difference of Tasseled-Cap Brightness & Tasseled-Cap Greenness. Have not seen this index before so currently referring to it as the Normalized TCB-TCG (NDTCBG) Index. Alternatively, also calling it the Rural Built-Up Index (RBUI). The primary observation of interest for using this normalized difference was because of confounding spectral signatures between rooftops and barren or non-vegetated fields, however, larger Tasseled Cap Greenness (TCG) responses of barren or non-vegetated fields relative to CAFO structures provided reason to exploit this relationship with a normalized difference approach.
 
 ![alt](../master/images/nc_cafo_change_detection_demo_06.png?raw=true "Raw Scene")
