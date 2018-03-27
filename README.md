@@ -18,6 +18,7 @@ Used Sentinel-2 for NDVI due to higher resolution specs. Goal here was to isolat
 <br />
 
 ### CAFO Buffer Overlay:
+Used buffer based on estimated CAFO locations to constrain AOI's.
 ![alt](../master/images/nc_cafo_change_detection_demo_03.png?raw=true "Raw Scene")
 
 <br />
@@ -27,12 +28,12 @@ Used Sentinel-2 for NDVI due to higher resolution specs. Goal here was to isolat
 
 <br />
 
-### CAFO Buffer Overlay:
+### Thresholding:
 Thresholded the imagery for final step in creating a valid-mask across the state. Cumuluative steps up to this point are essentially a simplified rural roof detection method.
 ![alt](../master/images/nc_cafo_change_detection_demo_05.png?raw=true "Raw Scene")
 
 
 ### Change Detection:
-Temporal Analysis for the normalized difference of Tasseled-Cap Brightness & Tasseled-Cap Greenness. Have not seen this index before so currently referring to it as the Normalized TCB-TCG (NDTCBG) Index. Alternatively, also calling it the Rural Built-Up Index (RBUI). The primary observation of interest for using this normalized difference was because of confounding spectral signatures between rooftops and barren or non-vegetated fields, however, larger Tasseled Cap Greenness (TCG) responses of barren or non-vegetated fields relative to CAFO structures provided reason to exploit this relationship with a normalized difference approach.
+Temporal/Time-series Analysis for the normalized difference of Tasseled-Cap Brightness & Tasseled-Cap Greenness. Have not seen this index before so currently referring to it as the Normalized TCB-TCG (NDTCBG) Index or the Rural Built-Up Index (RBUI). The primary observation of interest for using this normalized difference was because of confounding spectral signatures between rooftops and barren or non-vegetated fields, however, larger Tasseled Cap Greenness (TCG) responses of barren or non-vegetated fields relative to CAFO structures provided reason to exploit this relationship with a normalized difference approach.
 
 ![alt](../master/images/nc_cafo_change_detection_demo_06.png?raw=true "Raw Scene")
