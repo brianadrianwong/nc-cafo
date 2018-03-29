@@ -313,20 +313,3 @@ Export.table.toDrive({
   description: "ejLab_cafo_table_exp_yr_",
   fileFormat: "CSV"
 });
-
-/* Need to switch to for loop eventually:
-for (var i =2010; i<=2017; i ++) {
-  var ic = ee.ImageCollection('LANDSAT/LE07/C01/T1_SR')
-  .filterBounds(nc_bounds)
-  .filterDate(i+'-'+startDate, i+'-'+endDate)
-  .map(maskClouds)
-  .map(tc)
-  .map(ndvi)
-  .map(tcRatio)
-  .map(greenIndex)
-  .map(nonZeroPixels)
-  .median()
-  .set({"year": i})
-  .updateMask(validMask)
-}
-*/
